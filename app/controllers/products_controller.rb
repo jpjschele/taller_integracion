@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+    skip_before_action :verify_authenticity_token 
     def get_all
         begin
             warehouses = helpers.open_warehouses
@@ -9,6 +10,10 @@ class ProductsController < ApplicationController
         end
 
     end
+    def income
+        render :json => true , :status => 200
+    end 
+
 
     def get_all_private
         begin
