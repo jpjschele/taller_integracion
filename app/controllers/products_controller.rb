@@ -14,7 +14,6 @@ class ProductsController < ApplicationController
         render :json => true , :status => 200
     end 
 
-
     def get_all_private
         begin
             if request.headers["Authorization"].nil?
