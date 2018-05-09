@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 20180509224847) do
   enable_extension "plpgsql"
 
   create_table "orders", force: :cascade do |t|
-    t.integer "order"
+    t.string "order"
     t.string "estado"
     t.string "string"
+    t.string "sku"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
