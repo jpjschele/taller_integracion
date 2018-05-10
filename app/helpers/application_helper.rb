@@ -67,7 +67,7 @@ module ApplicationHelper
 
     def product_on_despacho
       #HAY QUE FILTRAR LAS ORDENES QUE NO HAYAN SIDO REALIZADAS
-      order = Order.first()
+      order = Order.where(:estado => "creada").first()
       despacho = get_despacho
       almacenes = get_product_on_warehouse([despacho], order.sku)
       total = 0
@@ -77,8 +77,9 @@ module ApplicationHelper
         end
       end
       if order.quantity <= total
-        #DESPACHAR
+        #DESPACHAR/Delete
         #Cambiar estado orden
+        order.estado = 'aceptada'
       else
         #BUSCAR EN OTROS ALMACENES (order, despacho)
       end
@@ -94,7 +95,7 @@ module ApplicationHelper
             if despachados < order.quantity
               move_to_shop(productos['_id'], despacho['_id'])
               despachados += productos['cantidad']
-            end 
+            end
           end
         end
       end
