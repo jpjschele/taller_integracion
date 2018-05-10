@@ -1,4 +1,6 @@
 module ApplicationHelper
+
+
     def open_warehouses
         require 'net/http'
         key = 'NTMFwkt1:e$A&m'
@@ -51,6 +53,52 @@ module ApplicationHelper
         return output
     end
 
+    def get_despacho
+      warehouses = open_warehouses
+      # almacen_despacho = ''
+      warehouses.each do |warehouse|
+        if warehouse["despacho"]
+          return warehouse
+          # almacen_despacho = warehouse["_id"]
+        end
+      end
+      # return almacen_despacho
+    end
 
-    
+    def product_on_despacho
+      #HAY QUE FILTRAR LAS ORDENES QUE NO HAYAN SIDO REALIZADAS
+      order = Order.first()
+      despacho = get_despacho
+      almacenes = get_product_on_warehouse([despacho], order.sku)
+      total = 0
+      almacenes.each do |almacen|
+        almacen['products'].each do |producto|
+          total += producto['cantidad']
+        end
+      end
+      if order.quantity <= total
+        #DESPACHAR
+        #Cambiar estado orden
+      else
+        #BUSCAR EN OTROS ALMACENES (order, despacho)
+      end
+    end
+
+    def buscar_productos_almacenes (order, despacho)
+      warehouses = open_warehouses
+      almacenes = get_product_on_warehouse(warehouses, order.sku)
+      despachados = 0
+      almacenes.each do |almacen|
+        if !almacen['despacho']
+          almacen.each do |productos|
+            if despachados < order.quantity
+              move_to_shop(productos['_id'], despacho['_id'])
+              despachados += productos['cantidad']
+            end 
+          end
+        end
+      end
+    end
+
+
 end

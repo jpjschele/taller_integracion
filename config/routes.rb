@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/public/1234", to: "products#income"
   get '/public/stock', to: 'products#get_all'
   get '/private/stock', to: 'products#get_all_private'
+  get '/despacho', to: 'orders#id_despacho'
 end
