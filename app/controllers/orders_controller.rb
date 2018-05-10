@@ -37,7 +37,7 @@ def sftp_server
                     if passed == 1
                         new_order = Order.new( :order => id, :estado => estado, :sku => sku, :quantity => quantity)
                         new_order.save
-                        #sftp.remove("#{path}/#{entry.name}")
+                        sftp.remove("#{path}/#{entry.name}")
                     end
             end
         end
