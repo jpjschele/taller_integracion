@@ -50,7 +50,7 @@ module ApplicationHelper
         end
         return output
     end
-
+    
 
     
 end
