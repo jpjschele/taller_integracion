@@ -10,9 +10,9 @@ class ProductsController < ApplicationController
         end
 
     end
-    def income
+    def income 
         render :json => true , :status => 200
-    end 
+    end
 
     def get_all_private
         begin
