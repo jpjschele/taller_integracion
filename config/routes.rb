@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post '/public/1234',  to: 'orders#sftp_server'
   get '/public/stock', to: 'products#get_all'
   get '/private/stock', to: 'products#get_all_private'
+  get '/despacho', to: 'orders#id_despacho'
 end
