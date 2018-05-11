@@ -41,6 +41,7 @@ module ApplicationHelper
                 else
                     dic[product["_id"]] = product["total"].to_i
                 end
+                return product["_id"]
             end
 
         end
@@ -50,7 +51,5 @@ module ApplicationHelper
         end
         return output
     end
-    
 
-    
 end
