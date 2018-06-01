@@ -1,0 +1,70 @@
+sku,name,price
+20,Manzana,200
+30,Naranja,200
+40,Frutilla,50
+50,Frambuesa,50
+60,Durazno,300
+70,Arándano,50
+200000000,Jugo Manzana,500
+230000000,Jugo Manzana Naranja,1000
+234000000,Jugo Manzana Naranja Frutilla,1500
+234500000,Jugo Manzana Naranja Frutilla Frambuesa,2000
+234560000,Jugo Manzana Naranja Frutilla Frambuesa Durazno,2500
+234567000,Jugo Fruit Super Punch,3000
+234570000,Jugo Manzana Naranja Frutilla Frambuesa Arándano,2500
+234600000,Jugo Manzana Naranja Frutilla Durazno,2000
+234670000,Jugo Manzana Naranja Frutilla Durazno Arándano,2500
+234700000,Jugo Manzana Naranja Frutilla Arándano,2000
+235000000,Jugo Manzana Naranja Frambuesa,1500
+235600000,Jugo Manzana Naranja Frambuesa Durazno,2000
+235670000,Jugo Manzana Naranja Frambuesa Durazno Arándano,2500
+235700000,Jugo Manzana Naranja Frambuesa Arándano,2000
+236000000,Jugo Manzana Naranja Durazno,1500
+236700000,Jugo Manzana Naranja Durazno Arándano,2000
+237000000,Jugo Manzana Naranja Arándano,1500
+240000000,Jugo Manzana Frutilla,1000
+245000000,Jugo Manzana Frutilla Frambuesa,1500
+245600000,Jugo Manzana Frutilla Frambuesa Durazno,2000
+245670000,Jugo Manzana Frutilla Frambuesa Durazno Arándano,2500
+245700000,Jugo Manzana Frutilla Frambuesa Arándano,2000
+246000000,Jugo Manzana Frutilla Durazno,1500
+246700000,Jugo Manzana Frutilla Durazno Arándano,2000
+247000000,Jugo Manzana Frutilla Arándano,1500
+250000000,Jugo Manzana Frambuesa,1000
+256000000,Jugo Manzana Frambuesa Durazno,1500
+256700000,Jugo Manzana Frambuesa Durazno Arándano,2000
+257000000,Jugo Manzana Frambuesa Arándano,1500
+260000000,Jugo Manzana Durazno,1000
+267000000,Jugo Manzana Durazno Arándano,1500
+270000000,Jugo Manzana Arándano,1000
+300000000,Jugo Vitamina Naranja,500
+340000000,Jugo Naranja Frutilla,1000
+345000000,Jugo Naranja Frutilla Frambuesa,1500
+345600000,Jugo Naranja Frutilla Frambuesa Durazno,2000
+345670000,Jugo Naranja Frutilla Frambuesa Durazno Arándano,2500
+345700000,Jugo Mix Tropical,2000
+346000000,Jugo Naranja Frutilla Durazno,1500
+346700000,Jugo Naranja Frutilla Durazno Arándano,2000
+347000000,Jugo Naranja Frutilla Arándano,1500
+350000000,Jugo Naranja Frambuesa,1000
+356000000,Jugo Naranja Frambuesa Durazno,1500
+356700000,Jugo Naranja Frambuesa Durazno Arándano,2000
+357000000,Jugo Naranja Frambuesa Arándano,1500
+360000000,Jugo Naranja Durazno,1000
+367000000,Jugo Naranja Durazno Arándano,1500
+370000000,Jugo Naranja Arándano,1000
+400000000,Jugo Frutilla,500
+450000000,Jugo Frutilla Frambuesa,1000
+456000000,Jugo Frutilla Frambuesa Durazno,1500
+456700000,Jugo Frutilla Frambuesa Durazno Arándano,2000
+457000000,Jugo Berries,1500
+460000000,Jugo Frutilla Durazno,1000
+467000000,Jugo Frutilla Durazno Arándano,1500
+470000000,Jugo Frutilla Arándano,1000
+500000000,Jugo Frambuesa,500
+560000000,Jugo Frambuesa Durazno,1000
+567000000,Jugo Frambuesa Durazno Arándano,1500
+570000000,Jugo Frambuesa Arándano,1000
+600000000,Jugo Durazno,500
+670000000,Jugo Durazno Arándano,1000
+700000000,Jugo Arándano,500
