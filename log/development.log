@@ -15412,3 +15412,50 @@ Completed 200 OK in 3821ms (Views: 0.5ms | ActiveRecord: 0.0ms)
   [1m[36mSpree::Preference Load (0.3ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
   [1m[36mSpree::Preference Load (8.7ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
   [1m[36mSpree::Preference Load (0.4ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (3.8ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 ORDER BY "spree_preferences"."id" ASC LIMIT $2[0m  [["key", "spree/app_configuration/track_inventory_levels"], ["LIMIT", 1]]
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSpree::Preference Exists (6.5ms)[0m  [1m[34mSELECT  1 AS one FROM "spree_preferences" WHERE LOWER("spree_preferences"."key") = LOWER($1) AND ("spree_preferences"."id" != $2) LIMIT $3[0m  [["key", "spree/app_configuration/track_inventory_levels"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSpree::Preference Load (7.3ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/auth_configuration/confirmable"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.3ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/auth_configuration/confirmable"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.3ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.3ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.4ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+Started POST "/public/order" for 127.0.0.1 at 2018-06-02 19:04:16 -0400
+  [1m[36mSpree::Preference Load (7.0ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/auth_configuration/confirmable"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.4ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+  
+SyntaxError (/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+las nuevas ordenes, se aceptan o rechazan
+                              ^
+/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:14: syntax error, unexpected keyword_do_block, expecting keyword_end
+'grupo9', :password => key) do |sftp|
+                              ^
+/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:16: syntax error, unexpected keyword_do_block, expecting keyword_end
+ftp.dir.foreach("/pedidos") do |entry|
+                              ^
+/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:25: syntax error, unexpected keyword_do_block, expecting keyword_end
+  doc = Nokogiri::XML(file) do |config|
+                              ^
+/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:30: syntax error, unexpected keyword_do_block, expecting keyword_end
+          subnode.each do |node|
+                         ^
+/Users/JPSCHELE/Desktop/2018-1-G9/app/controllers/orders_controller.rb:65: syntax error, unexpected keyword_end, expecting end-of-input
+      end
+         ^):
+  
+app/controllers/orders_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/orders_controller.rb:14: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/controllers/orders_controller.rb:16: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/controllers/orders_controller.rb:25: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/controllers/orders_controller.rb:30: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/controllers/orders_controller.rb:65: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/public/order" for 127.0.0.1 at 2018-06-02 19:04:52 -0400
+  [1m[36mSpree::Preference Load (0.4ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/auth_configuration/confirmable"], ["LIMIT", 1]]
+  [1m[36mSpree::Preference Load (0.4ms)[0m  [1m[34mSELECT  "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = $1 LIMIT $2[0m  [["key", "spree/app_configuration/admin_path"], ["LIMIT", 1]]
+Processing by OrdersController#sftp_server as */*
+  Parameters: {"order"=>{}}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 22.1ms)
+
+

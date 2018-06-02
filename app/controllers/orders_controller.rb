@@ -9,7 +9,7 @@
     render :json => true , :status => 200
   end
   def ordenes_de_compra
-    Get de todas las nuevas ordenes, se aceptan o rechazan
+    
     key = KEY_SFTP_DEV
     Net::SFTP.start('integradev.ing.puc.cl', 'grupo9', :password => key) do |sftp|
       path = '/pedidos'
